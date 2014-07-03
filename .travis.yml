@@ -5,7 +5,7 @@ rvm:
 env:
   - DB=postgresql
 
-script: bundle exec rspec spec
+# script: bundle exec rspec spec
 
 # Set up database
 before_script:
