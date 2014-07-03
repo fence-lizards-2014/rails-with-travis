@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: rails-fun_development
+test:
+  <<: *default
+  database: rails-fun_test
+production:
+  <<: *default
+  database: rails-fun_production
+  username: #Set these when you deploy
+  password:
