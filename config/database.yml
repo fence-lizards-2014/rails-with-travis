@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: rails-fun_development
+  database: rails_fun_development
 test:
   <<: *default
-  database: rails-fun_test
+  database: rails_fun_test
 production:
   <<: *default
-  database: rails-fun_production
+  database: rails_fun_production
   username: #Set these when you deploy
   password:
