@@ -9,5 +9,5 @@ script: bundle exec rspec spec
 
 # Set up database
 before_script:
-  - psql -c 'create database rails-fun_test;' -U postgres
+  - psql -c 'create database fun_test;' -U postgres
   - bundle exec rake db:migrate
