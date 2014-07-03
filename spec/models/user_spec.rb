@@ -9,6 +9,7 @@ describe User do
   context "#name" do
     let(:user) { FactoryGirl.build :user, :email => "shadi@dev.com" }
     it "sets the name as the first part of the email" do
+      pending
       user.save
       expect(user.reload.name).to eq "shadi"
     end
